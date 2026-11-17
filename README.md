@@ -29,7 +29,7 @@ DailyDElhiClimate
 Jupyter Notebook
 
 ### PROGRAM:
-```
+```python
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -93,7 +93,9 @@ plt.tight_layout()
 plt.show()
 ```
 <img width="1111" height="741" alt="image" src="https://github.com/user-attachments/assets/9768c821-e8da-485b-badd-f6a43484b5e9" />
+
 #### SIMULATED ARMA(1,1) PROCESS:
+
 ```python
 # Fit ARMA(1,1) using ARIMA
 arma11_model = ARIMA(X, order=(1, 1, 1)).fit()
@@ -137,7 +139,8 @@ plt.title('ARMA(1,1) PACF')
 plt.tight_layout()
 plt.show()
 ```
-#### SIMULATED ARMA(2,2) PROCESS:
+#### SIMULATED ARMA(2,2) PROCESS:<br>
+
 ```python
 # Fit ARMA(2,2) using ARIMA
 arma22_model = ARIMA(X, order=(2, 1, 2)).fit()
@@ -204,6 +207,9 @@ plt.title('ARMA(2,2) PACF')
 plt.tight_layout()
 plt.show()
 ```
+
+<br>
+
 ```python
 # Calculate RMSE and MAE
 rmse11 = np.sqrt(mean_squared_error(y_test, forecast11))
@@ -220,6 +226,7 @@ print("\nARMA(2,2) Performance")
 print("RMSE:", rmse22)
 print("MAE:", mae22)
 ```
+
 ### OUTPUT:
 #### SIMULATED ARMA(1,1) PROCESS:
 
